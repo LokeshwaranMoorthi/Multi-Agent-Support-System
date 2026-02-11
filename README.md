@@ -1,19 +1,19 @@
-# 🚀 Swades AI: Multi-Agent Support System
+# Multi-Agent Support System
 
 A high-performance, real-time customer support platform featuring an AI Orchestrator that dynamically routes queries to specialized agents. Built with a modern Django-React stack and powered by Groq's Llama-3-70B.
 
-## 🏗️ Architectural Overview
+## Architectural Overview
 
 The system follows a **Router-Worker pattern**. Instead of a single prompt handling everything, an Orchestrator analyzes intent and delegates tasks to specialized agents grounded in a relational database.
 
-## 🌟 Key Features
+## Key Features
 
 - **Intelligent Routing**: Orchestrator identifies intent (Orders vs. Billing) to reduce token noise and increase accuracy.
 - **Deterministic Grounding**: Sub-agents use Django ORM to query real data (Order status, Invoice amounts), eliminating AI hallucinations.
 - **Real-time Communication**: Built on Django Channels & WebSockets for low-latency chat and live "typing" states.
 - **Premium UI/UX**: A React-based glassmorphic interface with smooth CSS transitions and auto-scroll logic.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -23,7 +23,7 @@ The system follows a **Router-Worker pattern**. Instead of a single prompt handl
 | **Frontend** | React.js, WebSockets |
 | **Database** | SQLite (Relational grounding) |
 
-## 🚦 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 - Python 3.10+
@@ -53,3 +53,4 @@ python seed_data.py
 
 # Start the ASGI server
 python manage.py runserver
+
