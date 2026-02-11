@@ -1,0 +1,18 @@
+# Node.js
+**/node_modules/
+frontend/build/
+.eslintcache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Database
+db.sqlite3
+
+# Misc
+.DS_Store
